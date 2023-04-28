@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tell us about your car</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Tell us about your car</h1>
+      <p id="description">Tell us about your car and we can make an excellent offer!</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label id="name-label" for="name">
+          Name: <input type="text" name="name" id="name" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label" for="email">
+          Email: <input type="email" name="email" id="email" placeholder="Enter your email" required />
+        </label>
+        <label id="number-label" for="number">
+          Car age: <input type="number" name="age" id="number" min="1" max="100" placeholder="Enter age of your car" />
+        </label>
+        <label id="number-label" for="number">
+          Car mileage: <input type="number" name="age" id="number" placeholder="Enter your car mileage" />
+        </label>
+        <label>What color is your car?
+          <select id="dropdown">
+            <option disabled selected value>Please select color</option>
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+            <option value="brown">Brown</option>
+            <option value="gray">Gray</option>
+            <option value="green">Green</option>
+            <option value="orange">Orange</option>
+            <option value="red">Red</option>
+            <option value="silver">Silver</option>
+            <option value="white">White</option>
+            <option value="yellow">Yellow</option>
+        </select>
+        </label>
+        <div class="engine">
+          <p>Engine type</p>
+          <label><input type="radio" name="engine-type" value="gas" class="radio"/> Gas</label>
+          <label><input type="radio" name="engine-type" value="diesel" class="radio"/> Diesel</label>
+          <label><input type="radio" name="engine-type" value="hybrid" class="radio"/> Hybrid</label>
+          <label><input type="radio" name="engine-type" value="electro" class="radio"/> Electro</label>
+        </div>
+        <div class="transmission">
+          <p>Transmission type</p>
+          <label><input type="radio" name="transmission-type" value="automatic"/> Automatic</label>
+          <label><input type="radio" name="transmission-type" value="manual"/> Manual</label>
+        </div>
+        <div class="drive">
+          <p>Drive type</p>
+          <label><input type="radio" name="drive-type" value="front" />Front wheels</label>
+          <label><input type="radio" name="drive-type" value="rear" />Rear wheels</label>
+          <label><input type="radio" name="drive-type" value="all" />All wheels</label>
+        </div>
+        <div>
+          <p>Car equipment</p>
+          <label><input type="checkbox" value="conditioner" />Air conditioner</label>
+          <label><input type="checkbox" value="abs" />ABS </label>
+          <label><input type="checkbox" value="leather" />Leather interior</label>
+          <label><input type="checkbox" value="led"/>LED lights</label>
+          <label><input type="checkbox" value="sunroof" />Sunroof</label>
+          <label><input type="checkbox" value="camera" />Rear view camera</label>
+          <label><input type="checkbox" value="alloy" />Alloy wheels</label>
+          <label><input type="checkbox" value="fog" />Fog lights</label>
+        </div>
+        <div>
+          <p>If you want to add something about your car, please write it in the filed below:</p>
+          <textarea name="comments" id="comments" placeholder="Leave your comments here.."></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</htmL>
