@@ -14,19 +14,19 @@
     </header>
     <main>
       <form id="survey-form">
-        <label id="name-label" for="name">
+        <div class="form-input"><label id="name-label" for="name">
           Name: <input type="text" name="name" id="name" placeholder="Enter your name" required />
-        </label>
-        <label id="email-label" for="email">
+        </label></div>
+        <div class="form-input"><label id="email-label" for="email">
           Email: <input type="email" name="email" id="email" placeholder="Enter your email" required />
-        </label>
-        <label id="number-label" for="number">
+        </label></div>
+        <div class="form-input"><label id="number-label" for="number">
           Car age: <input type="number" name="age" id="number" min="1" max="100" placeholder="Enter age of your car" />
-        </label>
-        <label id="number-label" for="number">
+        </label></div>
+        <div class="form-input"><label id="number-label" for="number">
           Car mileage: <input type="number" name="age" id="number" placeholder="Enter your car mileage" />
-        </label>
-        <label>What color is your car?
+        </label></div>
+        <div class="form-input"><label>What color is your car?
           <select id="dropdown">
             <option disabled selected value>Please select color</option>
             <option value="black">Black</option>
@@ -40,13 +40,13 @@
             <option value="white">White</option>
             <option value="yellow">Yellow</option>
         </select>
-        </label>
+        </label></div>
         <div class="engine">
           <p>Engine type</p>
-          <label><input type="radio" name="engine-type" value="gas" class="radio"/> Gas</label>
-          <label><input type="radio" name="engine-type" value="diesel" class="radio"/> Diesel</label>
-          <label><input type="radio" name="engine-type" value="hybrid" class="radio"/> Hybrid</label>
-          <label><input type="radio" name="engine-type" value="electro" class="radio"/> Electro</label>
+          <label><input type="radio" name="engine-type" value="gas"/> Gas</label>
+          <label><input type="radio" name="engine-type" value="diesel"/> Diesel</label>
+          <label><input type="radio" name="engine-type" value="hybrid"/> Hybrid</label>
+          <label><input type="radio" name="engine-type" value="electro"/> Electro</label>
         </div>
         <div class="transmission">
           <p>Transmission type</p>
@@ -59,7 +59,7 @@
           <label><input type="radio" name="drive-type" value="rear" />Rear wheels</label>
           <label><input type="radio" name="drive-type" value="all" />All wheels</label>
         </div>
-        <div>
+        <div class="form-input">
           <p>Car equipment</p>
           <label><input type="checkbox" value="conditioner" />Air conditioner</label>
           <label><input type="checkbox" value="abs" />ABS </label>
@@ -70,11 +70,11 @@
           <label><input type="checkbox" value="alloy" />Alloy wheels</label>
           <label><input type="checkbox" value="fog" />Fog lights</label>
         </div>
-        <div>
+        <div class="form-input">
           <p>If you want to add something about your car, please write it in the filed below:</p>
           <textarea name="comments" id="comments" placeholder="Leave your comments here.."></textarea>
         </div>
-        <button type="submit" id="submit">Submit</button>
+        <div class="form-input"><button class="button" type="submit" id="submit">Submit</button></div>
       </form>
     </main>
     <footer>
